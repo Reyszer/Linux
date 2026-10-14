@@ -1,1 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@reyszer - Perfil</title>
+    <!-- Importando a fonte pixelada retro 'Press Start 2P' do Google Fonts para combinar com o estilo -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: 'Press Start 2P', monospace, sans-serif;
+            font-size: 11px;
+            line-height: 2.2;
+            letter-spacing: 0.5px;
+        }
+        /* Efeito opcional de brilho retrô sutil no texto */
+        .retro-text {
+            text-shadow: 0 0 2px rgba(255, 255, 255, 0.4);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-start p-4 sm:p-8">
 
+    <!-- DICA PARA TROCAR A FOTO DO TOPO: Altere o atributo 'src' da tag <img> abaixo para o link ou caminho da sua imagem -->
+    <header class="w-full max-w-xl mb-8 text-center">
+        <div class="border-2 border-white p-1 inline-block bg-neutral-900 rounded-sm shadow-lg">
+            <img 
+                src="imagens/topo.jpg" 
+                alt="Foto do Topo" 
+                class="w-full h-auto max-h-48 object-cover filter grayscale contrast-125"
+                onerror="this.src='https://placehold.co/600x200/111111/ffffff?text=Erro+ao+carregar+imagem'"
+            >
+        </div>
+    </header>
+
+    <main class="w-full max-w-xl bg-black border border-white/20 p-6 rounded-sm shadow-2xl space-y-6 retro-text">
+
+        <!-- Handle / Nome de usuário -->
+        <section class="border-b border-white/20 pb-4">
+            <h1 class="text-white text-base font-bold tracking-wider">@reyszer</h1>
+            <p class="text-neutral-400 text-[9px] mt-1">Membro da rede / Área restrita</p>
+        </section>
+
+        <!-- Apresentação -->
+        <section class="space-y-4 text-neutral-200">
+            <p>
+                E aí? Eu sou Reyszer, pronuncia-se Rái-zer(PT-BR) ou Rizer(EN-US)
+            </p>
+            <p>
+                Gosto de Ciências Exatas, debates sobre consequências de decisões de macroescala ou de microescala, discussões sobre temas até então ficcionais com existência real discutida(como viagem no tempo ou buracos de minhoca), gosto de receber opiniões e críticas construtivas!
+            </p>
+            <p>
+                Sou da área da computação, e sim, esse CSS foi feito por mim(apesar da minha preferência pelo BackEnd)
+            </p>
+            <p>
+                Eu gosto de gatos, leões-marinhos, morsas, raposas(principalmente as do ártico) e papagaios.
+            </p>
+        </section>
+
+        <!-- DICA PARA TROCAR A FOTO DO MEIO: Altere o atributo 'src' da tag <img> abaixo para o link ou arquivo da sua foto -->
+        <div class="my-6 text-center border-2 border-dashed border-white/40 p-2 bg-neutral-950">
+            <p class="text-[9px] text-neutral-400 mb-2">--- FOTO DO MEIO ---</p>
+            <img 
+                src="imagens/meio.jpgw" 
+                alt="Foto do Meio" 
+                class="w-full h-auto max-h-64 object-cover mx-auto filter grayscale contrast-125"
+                onerror="this.src='https://placehold.co/400x300/111111/ffffff?text=Erro+ao+carregar+imagem'"
+            >
+        </div>
+
+        <!-- Continuação do texto -->
+        <section class="space-y-4 text-neutral-200 pt-2">
+            <p>
+                Sinceramente, não sei como fiz este CSS, não gosto da sintaxe do HTML e muito menos da do CSS, me sinto em território hostil.
+            </p>
+            <p class="font-bold text-white">
+                Sou Brasileiro, aliás.
+            </p>
+        </section>
+
+        <!-- Rodapé do Perfil -->
+        <footer class="border-t border-white/20 pt-4 text-center text-[9px] text-neutral-500">
+            CSS BY Reyszer &bull; luv u
+        </footer>
+
+    </main>
+
+</body>
